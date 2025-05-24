@@ -48,7 +48,7 @@ Before you begin, ensure you have the following installed:
 
 To use this project:
 
-1. Import your housing data into the `housingdata` table in the MySQL database.
+1. Import your housing data into the `housingdata` table in the MySQL database. 
 2. Run SQL scripts to clean and transform the data as per the project's requirements:
     - Removing duplicates with the `ROW_NUMBER` function
     - Resolving missing values for `PropertyAddress` by using `COALESCE`
