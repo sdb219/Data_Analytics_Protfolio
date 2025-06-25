@@ -3,7 +3,7 @@
 This project uses the Spotify Web API to fetch your top tracks, save them as a CSV, and visualize them.
 
 # -----------------------------------------
-# STEP 1: IMPORT LIBRARIES
+STEP 1: IMPORT LIBRARIES
 # -----------------------------------------
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
@@ -11,7 +11,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # -----------------------------------------
-# STEP 2: SET UP SPOTIFY AUTHENTICATION
+STEP 2: SET UP SPOTIFY AUTHENTICATION
 # -----------------------------------------
 # This connects your Python script to your Spotify account
 sp_oauth = SpotifyOAuth(
@@ -23,7 +23,7 @@ sp_oauth = SpotifyOAuth(
 )
 
 # -----------------------------------------
-# STEP 3: AUTHORIZE AND GET ACCESS TOKEN
+STEP 3: AUTHORIZE AND GET ACCESS TOKEN
 # -----------------------------------------
 # You'll need to paste the redirected URL after logging in to Spotify
 auth_url = sp_oauth.get_authorize_url()
@@ -35,17 +35,17 @@ token_info = sp_oauth.get_access_token(code)
 access_token = token_info['access_token']
 
 # -----------------------------------------
-# STEP 4: CREATE SPOTIFY CLIENT
+STEP 4: CREATE SPOTIFY CLIENT
 # -----------------------------------------
 sp = spotipy.Spotify(auth=access_token)
 
 # -----------------------------------------
-# STEP 5: FETCH YOUR TOP TRACKS
+STEP 5: FETCH YOUR TOP TRACKS
 # -----------------------------------------
 top_tracks = sp.current_user_top_tracks(limit=10)
 
 # -----------------------------------------
-# STEP 6: STRUCTURE DATA INTO A DATAFRAME
+STEP 6: STRUCTURE DATA INTO A DATAFRAME
 # -----------------------------------------
 data = []
 for track in top_tracks['items']:
@@ -59,13 +59,13 @@ for track in top_tracks['items']:
 df = pd.DataFrame(data, columns=['Name', 'Artist', 'Album', 'Popularity'])
 
 # -----------------------------------------
-# STEP 7: EXPORT TO CSV
+STEP 7: EXPORT TO CSV
 # -----------------------------------------
 df.to_csv("your_spotify_top_tracks.csv", index=False)
 print("✅ Data saved to your_spotify_top_tracks.csv")
 
 # -----------------------------------------
-# STEP 8: VISUALIZE WITH MATPLOTLIB
+STEP 8: VISUALIZE WITH MATPLOTLIB
 # -----------------------------------------
 plt.figure(figsize=(10, 6))
 plt.barh(df['Name'], df['Popularity'], color='skyblue')
