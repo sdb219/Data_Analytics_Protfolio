@@ -1,6 +1,6 @@
 # 🎵 Spotify Top Tracks Data Analysis
 # Author: Sri Durga Bhavani Gude
-# This project uses the Spotify Web API to fetch your top tracks, save them as a CSV, and visualize them.
+This project uses the Spotify Web API to fetch your top tracks, save them as a CSV, and visualize them.
 
 # -----------------------------------------
 # STEP 1: IMPORT LIBRARIES
