@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 # Blinkit Sales Performance Analysis 
+=======
+>>>>>>> b8c2f629c8808e45a49b5d8288a23f501456419e
 # Blinkit Sales Performance Dashboard – Power BI Analysis of KPIs & Business Insights
 
 ## 📌 Business Requirement
@@ -39,3 +42,7 @@ Total Sales = SUM(Sales[Revenue])
 Average Sales = AVERAGE(Sales[Revenue])
 Number of Items = COUNTROWS(Items)
 Average Rating = AVERAGE(Ratings[Customer_Rating])
+<<<<<<< HEAD
+=======
+
+>>>>>>> b8c2f629c8808e45a49b5d8288a23f501456419e

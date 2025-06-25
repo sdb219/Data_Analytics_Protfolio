@@ -36,11 +36,6 @@ An Excel Dashboard to visualize and analyze COVID-19 data globally and by countr
 
 ---
 
-## Visual Preview
-
-![Dashboard Screenshot](images/dashboard.png)
-
----
 
 ## Data Sources
 

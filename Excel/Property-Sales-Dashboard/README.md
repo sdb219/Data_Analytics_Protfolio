@@ -1,6 +1,5 @@
 # 🏘️ Property Sales Dashboard
 
-![Dashboard Preview](images/dashboard-preview.png) <!-- Replace with your actual image file name -->
 
 ## 📊 Overview
 
