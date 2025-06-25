@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 # -----------------------------------------
 STEP 2: SET UP SPOTIFY AUTHENTICATION
 
- This connects your Python script to your Spotify account
+# This connects your Python script to your Spotify account #
 sp_oauth = SpotifyOAuth(
     client_id="your_client_id",              # replace with your actual client ID
     client_secret="your_client_secret",      # replace with your actual client secret
@@ -24,7 +24,7 @@ sp_oauth = SpotifyOAuth(
 # -----------------------------------------
 STEP 3: AUTHORIZE AND GET ACCESS TOKEN
 
-You'll need to paste the redirected URL after logging in to Spotify
+# You'll need to paste the redirected URL after logging in to Spotify#
 auth_url = sp_oauth.get_authorize_url()
 print("Go to this URL and authorize:", auth_url)
 redirect_response = input("Paste the full redirect URL here: ")
